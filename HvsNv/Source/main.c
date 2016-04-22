@@ -202,15 +202,7 @@ void AppTaskLED1(void * pdata)
 	BEEP_OFF;
 	
 	while(1)
-	{
-//		LedToggle();
-		//LedOff();
-		//BEEP_ON;
-		//OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
-		//LedOn();
-		//BEEP_OFF;
-		//OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
-		
+	{		
 		if (g_udpinited == 1) {
 			Multicast_Config();
 			g_udpinited = 0;

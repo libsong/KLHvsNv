@@ -14,7 +14,7 @@
 
 #define MCUSV_MAJOR 1	//主版本号 
 #define MCUSV_MINOR 2  //次版本
-#define MCUSV_DEBUG 0  //bug修改
+#define MCUSV_DEBUG 1  //bug修改
 
 #define MCUHV_MAJOR 1	//主版本号 
 #define MCUHV_MINOR 1  //次版本 , 深圳航盛项目

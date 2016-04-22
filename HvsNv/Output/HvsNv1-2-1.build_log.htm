@@ -1,0 +1,221 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kl ivviw, Microsoft, LIC=CRMLQ-NDN88-22GL4-FI5W4-FS84D-V8YK9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\MDK5\mdk511a_exe\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\aaProduct\hd\HardProductUpdate\NewHvs\HvsNv\MDK\HvsNv.uvprojx
+Project File Date:  09/12/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\Source\main.c(230): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOH, GPIO_Pin_3,1);
+..\Source\main.c(231): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOH, GPIO_Pin_5,1);
+..\Source\main.c(232): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOA, GPIO_Pin_4,1);
+..\Source\main.c(233): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOA, GPIO_Pin_6,1);
+..\Source\main.c: 4 warnings, 0 errors
+compiling relay.c...
+relay.c(91): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_7,((relay1_84[0]>>0)&0x1));  
+relay.c(92): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_6,((relay1_84[0]>>1)&0x1));
+relay.c(93): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_5,((relay1_84[0]>>2)&0x1));
+relay.c(94): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_4,((relay1_84[0]>>3)&0x1));       
+relay.c(95): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_1,((relay1_84[0]>>4)&0x1));
+relay.c(96): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_0,((relay1_84[0]>>5)&0x1));       
+relay.c(97): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_9,((relay1_84[0]>>6)&0x1));        
+relay.c(98): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_8,((relay1_84[0]>>7)&0x1));
+relay.c(101): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_7,((relay1_84[1]>>0)&0x1));       
+relay.c(102): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_6,((relay1_84[1]>>1)&0x1));       
+relay.c(103): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_4,((relay1_84[1]>>2)&0x1));
+relay.c(104): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_3,((relay1_84[1]>>3)&0x1));               
+relay.c(105): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_15,((relay1_84[1]>>4)&0x1));      
+relay.c(108): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_12,((relay1_84[1]>>7)&0x1));      
+relay.c(112): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_10,((relay1_84[2]>>1)&0x1));      
+relay.c(113): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_9,((relay1_84[2]>>2)&0x1));       
+relay.c(114): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_7,((relay1_84[2]>>3)&0x1));
+relay.c(115): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_6,((relay1_84[2]>>4)&0x1));       
+relay.c(116): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_5,((relay1_84[2]>>5)&0x1));
+relay.c(117): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_4,((relay1_84[2]>>6)&0x1));
+relay.c(118): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_3,((relay1_84[2]>>7)&0x1));
+relay.c(121): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_2,((relay1_84[3]>>0)&0x1));
+relay.c(122): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_12,((relay1_84[3]>>1)&0x1));      
+relay.c(123): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_11,((relay1_84[3]>>2)&0x1));
+relay.c(124): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_10,((relay1_84[3]>>3)&0x1));      
+relay.c(125): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_15,((relay1_84[3]>>4)&0x1));
+relay.c(126): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_3,((relay1_84[3]>>5)&0x1));       
+relay.c(127): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_2,((relay1_84[3]>>6)&0x1));
+relay.c(128): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_1,((relay1_84[3]>>7)&0x1));       
+relay.c(131): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOI, GPIO_Pin_0,((relay1_84[4]>>0)&0x1));
+relay.c(132): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_15,((relay1_84[4]>>1)&0x1));      
+relay.c(133): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_14,((relay1_84[4]>>2)&0x1));
+relay.c(134): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_13,((relay1_84[4]>>3)&0x1));              
+relay.c(135): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_10,((relay1_84[4]>>4)&0x1));
+relay.c(136): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_9,((relay1_84[4]>>5)&0x1));       
+relay.c(137): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_8,((relay1_84[4]>>6)&0x1));
+relay.c(138): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_9,((relay1_84[4]>>7)&0x1));
+relay.c(141): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_8,((relay1_84[5]>>0)&0x1));
+relay.c(142): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_7,((relay1_84[5]>>1)&0x1));
+relay.c(143): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOC, GPIO_Pin_6,((relay1_84[5]>>2)&0x1));
+relay.c(144): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_8,((relay1_84[5]>>3)&0x1));
+relay.c(145): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_7,((relay1_84[5]>>4)&0x1));
+relay.c(146): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_6,((relay1_84[5]>>5)&0x1));
+relay.c(147): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_5,((relay1_84[5]>>6)&0x1));
+relay.c(148): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_4,((relay1_84[5]>>7)&0x1));
+relay.c(151): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_3,((relay1_84[6]>>0)&0x1));
+relay.c(152): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_2,((relay1_84[6]>>1)&0x1));
+relay.c(153): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_15,((relay1_84[6]>>2)&0x1));
+relay.c(154): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_14,((relay1_84[6]>>3)&0x1));
+relay.c(155): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_13,((relay1_84[6]>>4)&0x1));
+relay.c(156): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_12,((relay1_84[6]>>5)&0x1));
+relay.c(157): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_11,((relay1_84[6]>>6)&0x1));
+relay.c(158): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_10,((relay1_84[6]>>7)&0x1));
+relay.c(161): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_9,((relay1_84[7]>>0)&0x1));
+relay.c(162): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOD, GPIO_Pin_8,((relay1_84[7]>>1)&0x1));
+relay.c(163): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_15,((relay1_84[7]>>2)&0x1));
+relay.c(164): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_14,((relay1_84[7]>>3)&0x1));
+relay.c(165): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_12,((relay1_84[7]>>4)&0x1));
+relay.c(166): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_3,((relay1_84[7]>>5)&0x1));
+relay.c(167): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_5,((relay1_84[7]>>6)&0x1));
+relay.c(168): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_4,((relay1_84[7]>>7)&0x1));
+relay.c(171): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOA, GPIO_Pin_6,((relay1_84[8]>>0)&0x1));
+relay.c(172): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOF, GPIO_Pin_11,((relay1_84[8]>>1)&0x1));
+relay.c(173): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOB, GPIO_Pin_2,((relay1_84[8]>>2)&0x1));
+relay.c(174): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOF, GPIO_Pin_13,((relay1_84[8]>>3)&0x1));
+relay.c(175): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOF, GPIO_Pin_12,((relay1_84[8]>>4)&0x1));
+relay.c(176): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOF, GPIO_Pin_15,((relay1_84[8]>>5)&0x1));
+relay.c(177): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOF, GPIO_Pin_14,((relay1_84[8]>>6)&0x1));
+relay.c(178): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_1,((relay1_84[8]>>7)&0x1));
+relay.c(181): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_0,((relay1_84[9]>>0)&0x1));
+relay.c(182): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_8,((relay1_84[9]>>1)&0x1));
+relay.c(183): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_7,((relay1_84[9]>>2)&0x1));
+relay.c(184): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_10,((relay1_84[9]>>3)&0x1));
+relay.c(185): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_9,((relay1_84[9]>>4)&0x1));
+relay.c(186): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_12,((relay1_84[9]>>5)&0x1));
+relay.c(187): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_11,((relay1_84[9]>>6)&0x1));
+relay.c(188): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_14,((relay1_84[9]>>7)&0x1));
+relay.c(191): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_13,((relay1_84[10]>>0)&0x1));
+relay.c(192): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_6,((relay1_84[10]>>1)&0x1));
+relay.c(193): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOE, GPIO_Pin_15,((relay1_84[10]>>2)&0x1));
+relay.c(194): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_8,((relay1_84[10]>>3)&0x1));
+relay.c(195): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOG, GPIO_Pin_7,((relay1_84[10]>>4)&0x1));
+relay.c(196): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_10,((relay1_84[10]>>5)&0x1));
+relay.c(197): warning:  #188-D: enumerated type mixed with another type
+        GPIO_WriteBit(GPIOH, GPIO_Pin_9,((relay1_84[10]>>6)&0x1));
+relay.c: 84 warnings, 0 errors
+linking...
+Program Size: Code=53680 RO-data=1220 RW-data=2516 ZI-data=122892  
+FromELF: creating hex file...
+"..\Output\HvsNv1-2-1.axf" - 0 Error(s), 88 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\aaProduct\hd\HardProductUpdate\NewHvs\HvsNv\MDK\RTE
+  D:\MDK5\mdk511a_exe\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
