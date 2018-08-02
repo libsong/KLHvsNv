@@ -1,0 +1,11 @@
+..\output\inet.o: ..\Source\LwIP\src\core\ipv4\inet.c
+..\output\inet.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\inet.o: ..\Source\NET\lwipopts.h
+..\output\inet.o: ..\Source\LwIP\src\include\lwip/debug.h
+..\output\inet.o: ..\Source\LwIP\src\include\lwip/arch.h
+..\output\inet.o: ..\Source\LwIP\port\arch/cc.h
+..\output\inet.o: ..\Source\LwIP\port\arch/cpu.h
+..\output\inet.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\inet.o: ..\Source\LwIP\src\include\ipv4\lwip/inet.h
+..\output\inet.o: ..\Source\LwIP\src\include\lwip/def.h
+..\output\inet.o: ..\Source\LwIP\src\include\ipv4\lwip/ip_addr.h

@@ -1,0 +1,101 @@
+1/
+f407
+ucosiii
+dp83848
+
+udp
+默认 ip 192.168.1.100
+端口 10000
+
+2/
+PC（） 每燕平
+控制继电器 84 路，分为relay1~relay84，
+
+逻辑说明：
+1、初始状态：relay1~relay84对应管脚电平为0；
+
+
+2、IP可更改。
+
+3/
+协议  (hex)，Nv1.0.0版mcu侧 协议长度支持最大 128
+
+	be be be be be be be be cmd len (内容) crc ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+
+	总长度 = 8 + 1 + 1 + len + 1 + 8 + 8 = 27+len
+	len = 内容的字节数
+	crc =  内容的和校验
+	ff 保留字
+
+	mcu将  各内容数据加 1 返回
+
+cmd 
+ff mcu保留，不可用
+
+00 通信连接测试
+	->	be be be be be be be be 00 08 01 02 03 04 05 06 07 08 24 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	<- 	be be be be be be be be 00 08 02 03 04 05 06 07 08 09 2c ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	
+01 继电器配置，以bit位代表继电器开关，1开0关，relay1~relay84用11个字节标识，
+	->	be be be be be be be be 01 0b 00 00 00 00 01 01 01 05 06 07 08 1d ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+									  --------------配置位------------
+	<- 	be be be be be be be be 01 0b 01 01 01 01 02 02 02 06 07 08 09 28 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	
+02 激活配置
+	->	be be be be be be be be 02 01 01 01 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	<-	be be be be be be be be 02 01 02 02 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	
+03 复位所有继电器
+	->	be be be be be be be be 03 01 00 00 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	<-	be be be be be be be be 03 01 01 01 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	
+04 查询电压电流（响应需要时间，因为adc转换要时间）
+	PF3	VR12
+	PF4	V56
+	PF5	V34
+	PF6	V12
+	PF7	HALL_MCU 
+
+	->	be be be be be be be be 04 14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	<-	be be be be be be be be 04 14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 crc ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+									  --------真实电压电流值-------------------------------------
+									  
+c8IP_PORT 更改操作（第 10 11 12 13 个数据依次代表IP地址,第 14 15 个数据依次代表 端口低8位 高8位,掩码，网关）
+	->	be be be be be be be be c8 0e c0 a8 01 c8 20 4e Ff Ff Ff 0 c0 a8 01 01 06 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	<-	be be be be be be be be c8 0e c1 a9 02 c9 21 4f 00 00 00 1 c1 a9 02 02 14 ff ff ff ff ff ff ff ff ed ed ed ed ed ed ed ed
+	
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------- end at here 201800528 -------------------------------------------------------------
+
+
+20180529
+pg 11 13 14无功能，是网卡引脚
+
+20180801
+开始 v1.1.0
+按 孟昭阳 新 io 表设置引脚、灯等
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,9 @@
+..\output\def.o: ..\Source\LwIP\src\core\def.c
+..\output\def.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\def.o: ..\Source\NET\lwipopts.h
+..\output\def.o: ..\Source\LwIP\src\include\lwip/debug.h
+..\output\def.o: ..\Source\LwIP\src\include\lwip/arch.h
+..\output\def.o: ..\Source\LwIP\port\arch/cc.h
+..\output\def.o: ..\Source\LwIP\port\arch/cpu.h
+..\output\def.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\def.o: ..\Source\LwIP\src\include\lwip/def.h

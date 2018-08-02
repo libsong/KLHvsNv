@@ -1,0 +1,16 @@
+..\output\netbuf.o: ..\Source\LwIP\src\api\netbuf.c
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\netbuf.o: ..\Source\NET\lwipopts.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/debug.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/arch.h
+..\output\netbuf.o: ..\Source\LwIP\port\arch/cc.h
+..\output\netbuf.o: ..\Source\LwIP\port\arch/cpu.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/opt.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/netbuf.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/pbuf.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/err.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\ipv4\lwip/ip_addr.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/def.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/memp.h
+..\output\netbuf.o: ..\Source\LwIP\src\include\lwip/memp_std.h
+..\output\netbuf.o: D:\MDK5\mdk511a_exe\ARM\ARMCC\Bin\..\include\string.h

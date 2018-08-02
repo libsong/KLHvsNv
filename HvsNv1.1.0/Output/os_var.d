@@ -1,0 +1,15 @@
+..\output\os_var.o: ..\Source\UCOSIII\uCOS-III\Source\os_var.c
+..\output\os_var.o: ..\Source\UCOSIII\uCOS-III\Source\os.h
+..\output\os_var.o: ..\Source\UCOSIII\config\os_cfg.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-CPU\cpu_core.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-CPU\cpu.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-CPU\cpu_def.h
+..\output\os_var.o: ..\Source\UCOSIII\config\cpu_cfg.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-LIB\lib_def.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-LIB\lib_mem.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-CPU\cpu_core.h
+..\output\os_var.o: ..\Source\UCOSIII\config\lib_cfg.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-LIB\lib_str.h
+..\output\os_var.o: ..\Source\UCOSIII\uC-LIB\lib_ascii.h
+..\output\os_var.o: ..\Source\UCOSIII\uCOS-III\Source\os_type.h
+..\output\os_var.o: ..\Source\UCOSIII\uCOS-III\Ports\os_cpu.h
