@@ -113,14 +113,14 @@ void RelayPin_Init(void)
 																| GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4\
 																| GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_8\
 																| GPIO_Pin_0 | GPIO_Pin_1; 	
-	GPIO_Init(GPIOG, &GPIO_InitStructure);
-	GPIO_WriteBit(GPIOG, GPIO_Pin_7,Bit_SET);	//
+	GPIO_Init(GPIOG, &GPIO_InitStructure);	
 	
 	//PH
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11 | GPIO_Pin_12 | GPIO_Pin_13\
 																| GPIO_Pin_14|GPIO_Pin_15  | GPIO_Pin_3\
-																| GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_8; 	
+																| GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_8; 	
 	GPIO_Init(GPIOH, &GPIO_InitStructure);
+	GPIO_WriteBit(GPIOH, GPIO_Pin_7,Bit_SET);	//RN led
 	
 	//PI
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2\
@@ -246,7 +246,6 @@ void AppTaskStart(void *p_arg)
 	Mem_Init();
 	
 	RelayPin_Init();
-	//LedInit();
 	//
 	ADC1_Init();
 	ADC3_Init();         //≥ı ºªØADC

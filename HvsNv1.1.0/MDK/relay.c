@@ -95,10 +95,10 @@ void relay_active(void)
 	GPIO_WriteBit(GPIOE, GPIO_Pin_1,((relay1_84[0]>>4)&0x1));
 	//GPIO_WriteBit(GPIOE, GPIO_Pin_0,((relay1_84[0]>>5)&0x1));	////从属同步于 relay 38 或 58
 	if (((relay1_84[4]>>5)&0x1) || ((relay1_84[7]>>1)&0x1)) {
-		GPIO_WriteBit(GPIOE, GPIO_Pin_1,Bit_SET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_0,Bit_SET);
 	}
 	else {
-		GPIO_WriteBit(GPIOE, GPIO_Pin_1,Bit_RESET);
+		GPIO_WriteBit(GPIOE, GPIO_Pin_0,Bit_RESET);
 	}
 	//GPIO_WriteBit(GPIOB, GPIO_Pin_9,((relay1_84[0]>>6)&0x1));	//从属同步于 relay 26 
 	GPIO_WriteBit(GPIOB, GPIO_Pin_8,((relay1_84[0]>>7)&0x1));
