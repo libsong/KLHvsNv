@@ -10,7 +10,7 @@
 #define DEVTYPECODE 0x0300 //设备种类标识，0x0100电源类 0x0200故障类 0x0300高压模拟类
 #define DEVNAME "HighValtageBox"
 #define MCUTYPE "STM32F407"
-#define DEVSN "SN0"
+#define DEVSN "SN0-180813"
 
 #define MCUSV_MAJOR 1	//主版本号 
 #define MCUSV_MINOR 1  //次版本
