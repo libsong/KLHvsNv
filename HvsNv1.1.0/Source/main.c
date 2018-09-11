@@ -232,6 +232,11 @@ void AppTaskADCGET(void * pdata)
 		if(TempCheckRet != 0 || g_OcOverLimit == 1){
 			BEEP_ON;
 		}
+		GPIO_WriteBit(GPIOH, GPIO_Pin_3,1);
+		GPIO_WriteBit(GPIOH, GPIO_Pin_5,1);
+		GPIO_WriteBit(GPIOA, GPIO_Pin_4,1);
+		GPIO_WriteBit(GPIOA, GPIO_Pin_6,1);
+		OSTimeDlyHMSM(0, 0, 0, 10, OS_OPT_TIME_HMSM_STRICT, &err);
 		WeGetAdcOneByOne();
 	}
 }
