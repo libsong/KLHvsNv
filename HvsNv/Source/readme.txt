@@ -100,6 +100,11 @@ mulcast send to 225.226.227.228 54345 mulcast.c Line56
 ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include 拷贝到了 
 Source\CMSIS 并在魔术棒中设置此路径
 
+20180911
+形成版本 HvsNv1.2.0
+只是修改 relay.c 中 relay 对应关系 , 继电器 IO 全部开放，由应用层控制
+需求变化太频繁~~~
+
 
 
 

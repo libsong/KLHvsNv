@@ -1,0 +1,8 @@
+
+softversion "SN1-180911"
+
+#define MCUSV_MAJOR 1	//Ö÷°æ±¾ºÅ 
+#define MCUSV_MINOR 2  //´Î°æ±¾
+#define MCUSV_DEBUG 0  //bugÐÞ¸Ä
+
+航盛

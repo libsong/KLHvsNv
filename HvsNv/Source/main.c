@@ -45,7 +45,7 @@ extern u8 GW_ADDR3_m;
 #define  APP_TASK_START_PRIO                        7
 #define  APP_TASK_LED1_PRIO                         8
 #define  APP_TASK_NET_PRIO                          10
-#define  APP_TASK_ADCGET_PRIO                       9
+#define  APP_TASK_ADCGET_PRIO                       12
 
 static OS_TCB AppTaskStartTCB;
 static OS_TCB AppTaskLED1TCB;
@@ -206,10 +206,10 @@ void AppTaskLED1(void * pdata)
 //		LedToggle();
 		//LedOff();
 		//BEEP_ON;
-		OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
+		//OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
 		//LedOn();
 		//BEEP_OFF;
-		OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
+		//OSTimeDlyHMSM(0, 0, 0, 500, OS_OPT_TIME_HMSM_STRICT, &err);
 		
 		if (g_udpinited == 1) {
 			Multicast_Config();
@@ -218,6 +218,7 @@ void AppTaskLED1(void * pdata)
 			len = McuInfoInit(data);
 		}
 		multicast_send_data(data,len);
+		OSTimeDlyHMSM(0, 0, 1, 0, OS_OPT_TIME_HMSM_STRICT, &err);
 	}
 }
 
@@ -225,9 +226,11 @@ void AppTaskADCGET(void * pdata)
 {
 	OS_ERR err;
 	u8 	TempCheckRet = 0;
+	
+	OSTimeDlyHMSM(0, 0, 3, 0, OS_OPT_TIME_HMSM_STRICT, &err);
 	while(1)
 	{
-		OSTimeDlyHMSM(0, 0, 6, 0, OS_OPT_TIME_HMSM_STRICT, &err);
+		
 		TempCheckRet = TemperetureCheckAndActions();
 		if(TempCheckRet != 0 || g_OcOverLimit == 1){
 			BEEP_ON;

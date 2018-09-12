@@ -87,61 +87,49 @@ void relay_clear(void)
 
 void relay_active(void) 
 {
-	//RELAY 1~8 : 2 3 5 8
-	//GPIO_WriteBit(GPIOI, GPIO_Pin_7,((relay1_84[0]>>0)&0x1)); //从属同步于 relay 28 
+	//RELAY 1~8
+	GPIO_WriteBit(GPIOI, GPIO_Pin_7,((relay1_84[0]>>0)&0x1));  
 	GPIO_WriteBit(GPIOI, GPIO_Pin_6,((relay1_84[0]>>1)&0x1));
 	GPIO_WriteBit(GPIOI, GPIO_Pin_5,((relay1_84[0]>>2)&0x1));
-	//GPIO_WriteBit(GPIOI, GPIO_Pin_4,((relay1_84[0]>>3)&0x1));	//从属同步于 relay 18 
+	GPIO_WriteBit(GPIOI, GPIO_Pin_4,((relay1_84[0]>>3)&0x1));	
 	GPIO_WriteBit(GPIOE, GPIO_Pin_1,((relay1_84[0]>>4)&0x1));
-	//GPIO_WriteBit(GPIOE, GPIO_Pin_0,((relay1_84[0]>>5)&0x1));	////从属同步于 relay 38 或 58
-	if (((relay1_84[4]>>5)&0x1) || ((relay1_84[7]>>1)&0x1)) {
-		GPIO_WriteBit(GPIOE, GPIO_Pin_0,Bit_SET);
-	}
-	else {
-		GPIO_WriteBit(GPIOE, GPIO_Pin_0,Bit_RESET);
-	}
-	//GPIO_WriteBit(GPIOB, GPIO_Pin_9,((relay1_84[0]>>6)&0x1));	//从属同步于 relay 26 
+	GPIO_WriteBit(GPIOE, GPIO_Pin_0,((relay1_84[0]>>5)&0x1));	
+	GPIO_WriteBit(GPIOB, GPIO_Pin_9,((relay1_84[0]>>6)&0x1));	 
 	GPIO_WriteBit(GPIOB, GPIO_Pin_8,((relay1_84[0]>>7)&0x1));
 	
-	//RELAY9~16 : 11 16
-	//GPIO_WriteBit(GPIOB, GPIO_Pin_7,((relay1_84[1]>>0)&0x1));	//从属同步于 relay 32
-	//GPIO_WriteBit(GPIOB, GPIO_Pin_6,((relay1_84[1]>>1)&0x1));	//从属同步于 relay 30
+	//RELAY9~16
+	GPIO_WriteBit(GPIOB, GPIO_Pin_7,((relay1_84[1]>>0)&0x1));	
+	GPIO_WriteBit(GPIOB, GPIO_Pin_6,((relay1_84[1]>>1)&0x1));	
 	GPIO_WriteBit(GPIOB, GPIO_Pin_4,((relay1_84[1]>>2)&0x1));
-	//GPIO_WriteBit(GPIOB, GPIO_Pin_3,((relay1_84[1]>>3)&0x1));		//从属同步于 relay 36 或 21
-	if (((relay1_84[4]>>3)&0x1) || ((relay1_84[2]>>4)&0x1)) {
-		GPIO_WriteBit(GPIOB, GPIO_Pin_3,Bit_SET);
-	}
-	else {
-		GPIO_WriteBit(GPIOB, GPIO_Pin_3,Bit_RESET);
-	}
-	//GPIO_WriteBit(GPIOG, GPIO_Pin_15,((relay1_84[1]>>4)&0x1));	//从属同步于 relay 34 
-//	GPIO_WriteBit(GPIOG, GPIO_Pin_7,((relay1_84[1]>>5)&0x1));	//
-	GPIO_WriteBit(GPIOH, GPIO_Pin_10,((relay1_84[1]>>6)&0x1));
-	//GPIO_WriteBit(GPIOG, GPIO_Pin_12,((relay1_84[1]>>7)&0x1));	//从属同步于 relay 19 
+	GPIO_WriteBit(GPIOB, GPIO_Pin_3,((relay1_84[1]>>3)&0x1));		
+	GPIO_WriteBit(GPIOG, GPIO_Pin_15,((relay1_84[1]>>4)&0x1));	
+	//GPIO_WriteBit(GPIOG, GPIO_Pin_7,((relay1_84[1]>>5)&0x1));	
+	//GPIO_WriteBit(GPIOH, GPIO_Pin_10,((relay1_84[1]>>6)&0x1));
+	GPIO_WriteBit(GPIOG, GPIO_Pin_12,((relay1_84[1]>>7)&0x1));	
 	
-	//RELAY17~24 : 17 18 19 20 21 22 23 24
-	GPIO_WriteBit(GPIOH, GPIO_Pin_11,((relay1_84[2]>>0)&0x1));
-	GPIO_WriteBit(GPIOG, GPIO_Pin_10,((relay1_84[2]>>1)&0x1)); 	GPIO_WriteBit(GPIOI, GPIO_Pin_4,((relay1_84[2]>>1)&0x1));
-	GPIO_WriteBit(GPIOG, GPIO_Pin_9,((relay1_84[2]>>2)&0x1));	GPIO_WriteBit(GPIOG, GPIO_Pin_12,((relay1_84[2]>>2)&0x1));
+	//RELAY17~24 
+	//GPIO_WriteBit(GPIOH, GPIO_Pin_11,((relay1_84[2]>>0)&0x1));
+	GPIO_WriteBit(GPIOG, GPIO_Pin_10,((relay1_84[2]>>1)&0x1)); 	
+	GPIO_WriteBit(GPIOG, GPIO_Pin_9,((relay1_84[2]>>2)&0x1));	
 	GPIO_WriteBit(GPIOD, GPIO_Pin_7,((relay1_84[2]>>3)&0x1));
 	GPIO_WriteBit(GPIOD, GPIO_Pin_6,((relay1_84[2]>>4)&0x1));	
 	GPIO_WriteBit(GPIOD, GPIO_Pin_5,((relay1_84[2]>>5)&0x1));
 	GPIO_WriteBit(GPIOD, GPIO_Pin_4,((relay1_84[2]>>6)&0x1));
 	GPIO_WriteBit(GPIOD, GPIO_Pin_3,((relay1_84[2]>>7)&0x1));
 	
-	//RELAY25~32 : 25 26 27 28 29 30 31 32
+	//RELAY25~32 
 	GPIO_WriteBit(GPIOD, GPIO_Pin_2,((relay1_84[3]>>0)&0x1));
-	GPIO_WriteBit(GPIOC, GPIO_Pin_12,((relay1_84[3]>>1)&0x1));	GPIO_WriteBit(GPIOB, GPIO_Pin_9,((relay1_84[3]>>1)&0x1));
+	GPIO_WriteBit(GPIOC, GPIO_Pin_12,((relay1_84[3]>>1)&0x1));	
 	GPIO_WriteBit(GPIOC, GPIO_Pin_11,((relay1_84[3]>>2)&0x1));
-	GPIO_WriteBit(GPIOC, GPIO_Pin_10,((relay1_84[3]>>3)&0x1));	GPIO_WriteBit(GPIOI, GPIO_Pin_7,((relay1_84[3]>>3)&0x1));
+	GPIO_WriteBit(GPIOC, GPIO_Pin_10,((relay1_84[3]>>3)&0x1));	
 	GPIO_WriteBit(GPIOA, GPIO_Pin_15,((relay1_84[3]>>4)&0x1));
-	GPIO_WriteBit(GPIOI, GPIO_Pin_3,((relay1_84[3]>>5)&0x1));	GPIO_WriteBit(GPIOB, GPIO_Pin_6,((relay1_84[3]>>5)&0x1));
+	GPIO_WriteBit(GPIOI, GPIO_Pin_3,((relay1_84[3]>>5)&0x1));	
 	GPIO_WriteBit(GPIOI, GPIO_Pin_2,((relay1_84[3]>>6)&0x1));
-	GPIO_WriteBit(GPIOI, GPIO_Pin_1,((relay1_84[3]>>7)&0x1));	GPIO_WriteBit(GPIOB, GPIO_Pin_7,((relay1_84[3]>>7)&0x1));
+	GPIO_WriteBit(GPIOI, GPIO_Pin_1,((relay1_84[3]>>7)&0x1));	
 	
-	//RELAY33~40 : 33 34 35 36 37
+	//RELAY33~40 
 	GPIO_WriteBit(GPIOI, GPIO_Pin_0,((relay1_84[4]>>0)&0x1));
-	GPIO_WriteBit(GPIOH, GPIO_Pin_15,((relay1_84[4]>>1)&0x1));	GPIO_WriteBit(GPIOG, GPIO_Pin_15,((relay1_84[4]>>1)&0x1));
+	GPIO_WriteBit(GPIOH, GPIO_Pin_15,((relay1_84[4]>>1)&0x1));	
 	GPIO_WriteBit(GPIOH, GPIO_Pin_14,((relay1_84[4]>>2)&0x1));
 	GPIO_WriteBit(GPIOH, GPIO_Pin_13,((relay1_84[4]>>3)&0x1));		
 	GPIO_WriteBit(GPIOA, GPIO_Pin_10,((relay1_84[4]>>4)&0x1));
@@ -189,7 +177,7 @@ void relay_active(void)
 	GPIO_WriteBit(GPIOF, GPIO_Pin_14,((relay1_84[8]>>6)&0x1));
 	GPIO_WriteBit(GPIOG, GPIO_Pin_1,((relay1_84[8]>>7)&0x1));
 	
-	//RELAY73~80 : 78 79 80 
+	//RELAY73~80
 	GPIO_WriteBit(GPIOG, GPIO_Pin_0,((relay1_84[9]>>0)&0x1));
 	GPIO_WriteBit(GPIOE, GPIO_Pin_8,((relay1_84[9]>>1)&0x1));
 	GPIO_WriteBit(GPIOE, GPIO_Pin_7,((relay1_84[9]>>2)&0x1));
@@ -199,7 +187,7 @@ void relay_active(void)
 	GPIO_WriteBit(GPIOE, GPIO_Pin_11,((relay1_84[9]>>6)&0x1));
 	GPIO_WriteBit(GPIOE, GPIO_Pin_14,((relay1_84[9]>>7)&0x1));
 	
-	//RELAY81~86 : 81 82 83 84 86 87
+	//RELAY81~86
 	GPIO_WriteBit(GPIOE, GPIO_Pin_13,((relay1_84[10]>>0)&0x1));
 	GPIO_WriteBit(GPIOH, GPIO_Pin_6,((relay1_84[10]>>1)&0x1));
 	GPIO_WriteBit(GPIOE, GPIO_Pin_15,((relay1_84[10]>>2)&0x1));

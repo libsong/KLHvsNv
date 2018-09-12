@@ -445,12 +445,11 @@ ARM Macro Assembler    Page 7
   311 00000220                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=..\output\lib_mem_a.d -o..\output\lib_mem_a.o -IE:\aaProduct\hd
-\HardProductUpdate\NewHvs-v1.1.0\HvsNv1.1.0\MDK\RTE -ID:\MDK5\mdk511a_exe\ARM\P
-ACK\Keil\STM32F4xx_DFP\2.11.0 -ID:\MDK5\mdk511a_exe\ARM\CMSIS\Include -ID:\MDK5
-\mdk511a_exe\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4
-xx\Include --predefine="__UVISION_VERSION SETA 514" --predefine="STM32F407xx SE
-TA 1" --list=..\output\listing\lib_mem_a.lst ..\Source\UCOSIII\uC-LIB\lib_mem_a
-.asm
+\HardProductUpdate\NewHvs\HvsNv\MDK\RTE -ID:\MDK5\mdk511a_exe\ARM\PACK\Keil\STM
+32F4xx_DFP\2.11.0 -ID:\MDK5\mdk511a_exe\ARM\CMSIS\Include -ID:\MDK5\mdk511a_exe
+\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -
+-predefine="__UVISION_VERSION SETA 514" --predefine="STM32F407xx SETA 1" --list
+=..\output\listing\lib_mem_a.lst ..\Source\UCOSIII\uC-LIB\lib_mem_a.asm
 
 
 

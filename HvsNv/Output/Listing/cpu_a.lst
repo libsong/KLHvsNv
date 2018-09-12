@@ -460,11 +460,11 @@ ARM Macro Assembler    Page 8
 
 
 erwork --depend=..\output\cpu_a.d -o..\output\cpu_a.o -IE:\aaProduct\hd\HardPro
-ductUpdate\NewHvs-v1.1.0\HvsNv1.1.0\MDK\RTE -ID:\MDK5\mdk511a_exe\ARM\PACK\Keil
-\STM32F4xx_DFP\2.11.0 -ID:\MDK5\mdk511a_exe\ARM\CMSIS\Include -ID:\MDK5\mdk511a
-_exe\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Inclu
-de --predefine="__UVISION_VERSION SETA 514" --predefine="STM32F407xx SETA 1" --
-list=..\output\listing\cpu_a.lst ..\Source\UCOSIII\uC-CPU\cpu_a.asm
+ductUpdate\NewHvs\HvsNv\MDK\RTE -ID:\MDK5\mdk511a_exe\ARM\PACK\Keil\STM32F4xx_D
+FP\2.11.0 -ID:\MDK5\mdk511a_exe\ARM\CMSIS\Include -ID:\MDK5\mdk511a_exe\ARM\PAC
+K\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefi
+ne="__UVISION_VERSION SETA 514" --predefine="STM32F407xx SETA 1" --list=..\outp
+ut\listing\cpu_a.lst ..\Source\UCOSIII\uC-CPU\cpu_a.asm
 
 
 

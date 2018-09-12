@@ -21,15 +21,28 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
 Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-E:\aaProduct\hd\HardProductUpdate\NewHvs-v1.1.0\HvsNv1.1.0\MDK\HvsNv.uvprojx
+E:\aaProduct\hd\HardProductUpdate\NewHvs\HvsNv\MDK\HvsNv.uvprojx
 Project File Date:  08/02/2018
 
 <h2>Output:</h2>
 Build target 'Target 1'
-"..\Output\HvsNv1-1-0.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\Source\main.c(238): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOH, GPIO_Pin_3,1);
+..\Source\main.c(239): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOH, GPIO_Pin_5,1);
+..\Source\main.c(240): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOA, GPIO_Pin_4,1);
+..\Source\main.c(241): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WriteBit(GPIOA, GPIO_Pin_6,1);
+..\Source\main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=53664 RO-data=1220 RW-data=2516 ZI-data=122892  
+FromELF: creating hex file...
+"..\Output\HvsNv1-2-0.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  E:\aaProduct\hd\HardProductUpdate\NewHvs-v1.1.0\HvsNv1.1.0\MDK\RTE
+  E:\aaProduct\hd\HardProductUpdate\NewHvs\HvsNv\MDK\RTE
   D:\MDK5\mdk511a_exe\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0
 
 <h2>Collection of Component Files used:</h2>

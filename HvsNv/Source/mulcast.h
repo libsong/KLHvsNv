@@ -10,14 +10,14 @@
 #define DEVTYPECODE 0x0300 //设备种类标识，0x0100电源类 0x0200故障类 0x0300高压模拟类
 #define DEVNAME "HighValtageBox"
 #define MCUTYPE "STM32F407"
-#define DEVSN "SN0-180813"
+#define DEVSN "SN1-180911"
 
 #define MCUSV_MAJOR 1	//主版本号 
-#define MCUSV_MINOR 1  //次版本
+#define MCUSV_MINOR 2  //次版本
 #define MCUSV_DEBUG 0  //bug修改
 
 #define MCUHV_MAJOR 1	//主版本号 
-#define MCUHV_MINOR 0  //次版本
+#define MCUHV_MINOR 1  //次版本 , 深圳航盛项目
 
 //define the slave info 
 #pragma pack(1)

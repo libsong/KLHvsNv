@@ -1,0 +1,9 @@
+
+softversion "SN0-180813"
+
+#define MCUSV_MAJOR 1	//Ö÷°æ±¾ºÅ 
+#define MCUSV_MINOR 1  //´Î°æ±¾
+#define MCUSV_DEBUG 0  //bugÐÞ¸Ä
+
+奇瑞 
+东风
