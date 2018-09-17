@@ -192,7 +192,7 @@ void relay_active(void)
 	GPIO_WriteBit(GPIOH, GPIO_Pin_6,((relay1_84[10]>>1)&0x1));
 	GPIO_WriteBit(GPIOE, GPIO_Pin_15,((relay1_84[10]>>2)&0x1));
 	GPIO_WriteBit(GPIOH, GPIO_Pin_8,((relay1_84[10]>>3)&0x1));
-	GPIO_WriteBit(GPIOG, GPIO_Pin_7,((relay1_84[10]>>4)&0x1));
+	GPIO_WriteBit(GPIOH, GPIO_Pin_7,((relay1_84[10]>>4)&0x1));
 	GPIO_WriteBit(GPIOH, GPIO_Pin_10,((relay1_84[10]>>5)&0x1));
 	GPIO_WriteBit(GPIOH, GPIO_Pin_9,((relay1_84[10]>>6)&0x1));
 	

@@ -1,0 +1,13 @@
+
+softversion "SN1-180911"
+
+#define MCUSV_MAJOR 1	//Ö÷°æ±¾ºÅ 
+#define MCUSV_MINOR 2  //´Î°æ±¾
+#define MCUSV_DEBUG 0  //bugÐÞ¸Ä
+
+航盛
+
+v1.2.1
+	增加 relay 85
+v1.2.2
+	修改 relay 85 pin 为 PH7,硬件表格给错
